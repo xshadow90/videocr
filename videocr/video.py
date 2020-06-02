@@ -27,6 +27,7 @@ class Video:
             self.num_frames = int(v.get(cv2.CAP_PROP_FRAME_COUNT))
             self.fps = v.get(cv2.CAP_PROP_FPS)
             self.height = int(v.get(cv2.CAP_PROP_FRAME_HEIGHT))
+            print("it's working")
 
     def run_ocr(self, lang: str, time_start: str, time_end: str,
                 conf_threshold: int, use_fullframe: bool) -> None:
